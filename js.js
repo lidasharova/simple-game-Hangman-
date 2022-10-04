@@ -44,7 +44,7 @@ for (let i = 0 ;i < word.length;i++){
 
 //осздадим переменную в которой будет количество букв, которые нужно угадать и будем от нее отнимать количество (декрементировать) при угадывании буквы:
 let remainingLetters = word.length;
-let lives = 20;
+let lives = 25;
 // игровой цикл:
 while (remainingLetters > 0 && lives > 0) {
         	// Показываем состояние игры,выводя массив с угаданными буквами в виде строки
@@ -75,7 +75,7 @@ while (remainingLetters > 0 && lives > 0) {
 
  //завершение игры:
  	alert(answerArray.join(" "));
-	if (alert > 0){
+	if (lives > 0){
 		alert (`Отличная работа! Ответ был - ${word}!`);
 	}else {
 		alert (`Попытки закончились! Ответ был - ${word}`);
